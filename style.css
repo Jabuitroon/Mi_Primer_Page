@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    padding: 0%;
+    margin: 0%;
+}
+/* .logo{
+    position: fixed;
+} */
+.logo img{
+    width: 200px;
+}
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+}
+/* .nav-central{
+    display: flex;
+    justify-content: flex-start;
+} */
+ul{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+li{
+    display: flex;
+    line-height: 1.5;
+    padding: 5px 15px;
+}
+a{  
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.section-bg{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.car-bg img{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    /*Indica cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video>
+    debería redimensionarse para ajustarse a su contenedor.*/
+}
+.intro-bg, .footer{
+    position: absolute;
+}
+.footer{
+    padding-bottom: 3rem;
+    display: flex;
+    flex-grow: 3;
+    align-self: flex-end;
+}
+.footer a{
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 15px 25px;
+}
+
+.secciondebg{
+    max-height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(3rem);
+	scroll-snap-type: y mandatory;
+}
+
+.sect{
+    padding: 0%;
+    border-bottom: 1px solid white;
+	padding: 3rem;
+	font-size: 1.4rem;
+	color: rgba(white, .5);
+	background: lightgray;
+	scroll-snap-align: start;
+	flex-flow: column;
+	justify-content: center;
+} 
