@@ -7,9 +7,9 @@ body{
     margin: 0%;
 }
 /* navegador */
-.logo img{
+/* .logo img{
     width: 200px;
-}
+} */
 .navegador{
     display: flex;
     justify-content: space-between;
