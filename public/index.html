@@ -8,12 +8,12 @@
 </head>
 <body>
     <!-- Normalmente dentro de un nav va el ul (lista desordenada) asi es una forma de estructurar un menú -->
-    <div class="navegador">
+    <div class="navegador" style="color: white;">
         <div class="logo">
             <img src="./assets/logo.png" alt=DBZ>
         </div>
             <nav class="nav-central">
-                <ul>
+                <ul id="btn-nav">
                     <li><a href="#">Model A</a></li>
                     <li><a href="#">Model B</a></li>
                     <li><a href="#">Model C</a></li>
@@ -30,8 +30,9 @@
     </div>
 <section class="secciondebg">
     <section class="sect">
-        <div class="section-bg">
+        <div class="section-bg" data-color="white">
             <div class="intro-bg">
+                <pre id="output"></pre>
                 <h2>Disfruta paee</h2>
                 <p>Desarrollador web front hoy,mañana fullstack</p>
             </div>
@@ -41,7 +42,7 @@
         </div>
     </section>
     <section class="sect">
-        <div class="section-bg">
+        <div class="section-bg2" data-color="black">
             <div class="campo">
                 <img src="assets/Campo.jpg" alt="Rojo" style="object-fit: scale-down; width: 100%;">
             </div>
@@ -50,6 +51,7 @@
             </div>
         </div>
     </section>   
-</section>       
+</section>
+<script src="change.js"></script>     
 </body>
 </html>
