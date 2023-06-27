@@ -8,12 +8,12 @@
 </head>
 <body>
     <!-- Normalmente dentro de un nav va el ul (lista desordenada) asi es una forma de estructurar un menú -->
-    <div id="navegador" class="flex w-full fixed top-0 py-3 px-10 justify-between z-40" style="color: black;">
-        <div class="flex flex-grow basis-0">
+    <div id="navegador" class="flex w-full fixed top-0 py-1 px-3 justify-between z-40" style="color: black;">
+        <div class="flex-grow basis-0">
             <img class="w-52" src="./assets/logo.png" alt=DBZ>
         </div>
             <nav id="nav-central">
-                <ul id="btn-nav" class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]: font-right">
+                <ul id="btn-nav" class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-right">
                     <li><a href="#">Model A</a></li>
                     <li><a href="#">Model B</a></li>
                     <li><a href="#">Model C</a></li>
@@ -21,20 +21,21 @@
                     <li><a href="#">All</a></li>
                 </ul>
             </nav>
-            <nav id="nav-lateral" class="flex flex-grow justify-end basis-0">
-                <ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-right">
+            <nav id="nav-lateral" class="flex flex-grow basis-0 justify-end">
+                <ul id="btn-nav" class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li]:h-9">
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
+            <div id="cajita" class="absolute bg-black/5 backdrop-blur-lg rounded translate-x-[var(--left)] translate-y-[var(--top)] left-0 top-0 w-[var(--width)] h-[var(--height)] transition-all duration-300 ease-in-out opacity-0 -z-10"></div>
     </div>
-<section id="secciondebg" class="relative w-full h-screen overflow-auto snap-y snap-mandatory">
-    <section id="sect" class="w-full h-screen text-center overflow-hidden relative snap-center" style="background: red;">
+<section id="secciondebg" class="relative w-full h-screen overflow-auto snap-y snap-mandatory" style="scrollbar-width: thin;">
+    <section id="sect" class="w-full h-screen text-center overflow-hidden relative snap-center">
         <div id="section-bg" class="flex justify-center" data-color="white">
             <div class="absolute top-0 bottom-0 h-full">
                 <img src="assets/carro-bg.jpeg" alt="rojo">
             </div>
-            <div id="intro-bg" class="justify-center z-50 relative pt-40 items-center">
+            <div id="intro-bg" class="justify-center z-10 relative pt-40 items-center">
                 <pre id="output"></pre>
                 <h2 class="">Disfruta paee</h2>
                 <p>Desarrollador web front hoy,mañana fullstack</p>
