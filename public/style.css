@@ -1,27 +1,40 @@
 :root{
     --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
-a{
+.follow-me{
+    position: fixed;
+}
+
+.item{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
     position: relative;
+    transition: width 0.25s;
 }
-a::before{
-content: "";
-background: slateblue;
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-position: absolute;
-clip-path: var(--clippy);
-animation: moving 5s;
-animation-timing-function: ease-in-out;
-z-index: -1;
+
+.item span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-size: 100% auto;
+    text-indent: -9999em;
 }
-@keyframes moving
-{
-    from{left: 100%;}
-    to{left: opx;}
+
+.item:hover{
+    width: 135%;  
 }
-a:hover::before{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);;
+
+.github{
+    background: black;
+}
+
+.lk{
+    background: #9A7D0A;
+}
+.fb{
+    background: #3498DB;
 }

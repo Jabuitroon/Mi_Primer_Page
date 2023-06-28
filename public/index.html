@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proto My Web</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Normalmente dentro de un nav va el ul (lista desordenada) asi es una forma de estructurar un menú -->
     <div id="navegador" class="flex w-full fixed top-0 py-1 px-3 justify-between z-40" style="color: black;">
-        <div class="flex-grow basis-0">
-            <img class="w-52" src="./assets/logo.png" alt=DBZ>
+        <div id="logo" class="flex-grow basis-0">
+            <img class="w-24" src="./assets/logo.png" alt=DBZ>
         </div>
-            <nav id="nav-central">
-                <ul id="btn-nav" class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-right">
-                    <li><a href="#">Model A</a></li>
-                    <li><a href="#">Model B</a></li>
-                    <li><a href="#">Model C</a></li>
-                    <li><a href="#">Power</a></li>
-                    <li><a href="#">All</a></li>
-                </ul>
-            </nav>
-            <nav id="nav-lateral" class="flex flex-grow basis-0 justify-end">
-                <ul id="btn-nav" class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li]:h-9">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <div id="cajita" class="absolute bg-black/5 backdrop-blur-lg rounded translate-x-[var(--left)] translate-y-[var(--top)] left-0 top-0 w-[var(--width)] h-[var(--height)] transition-all duration-300 ease-in-out opacity-0 -z-10"></div>
+        <nav id="nav-central">
+            <ul id="btn-nav" class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-right">
+                <li><a href="#">Model A</a></li>
+                <li><a href="#">Model B</a></li>
+                <li><a href="#">Model C</a></li>
+                <li><a href="#">Power</a></li>
+                <li><a href="#">All</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-lateral" class="flex flex-grow basis-0 justify-end">
+            <ul id="btn-nav" class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li]:h-9">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    <div id="cajita" class="absolute bg-black/5 backdrop-blur-lg rounded translate-x-[var(--left)] translate-y-[var(--top)] left-0 top-0 w-[var(--width)] h-[var(--height)] transition-all duration-300 ease-in-out opacity-0 -z-10"></div>
     </div>
 <section id="secciondebg" class="relative w-full h-screen overflow-auto snap-y snap-mandatory" style="scrollbar-width: thin;">
     <section id="sect" class="w-full h-screen text-center overflow-hidden relative snap-center">
@@ -43,6 +44,19 @@
             <div id="footer" class="">
                 <a href="http://">Hipertextooooooo</a>
             </div>
+        </div>
+        <div class="follow-me">
+            <ul>
+                <li><a class="github item" target="_blank" href="https://github.com/Jabuitroon" title="Follow on GitHub">
+                    <span class="bg-[url('assets/github.png')]">Follow on Github</span></a>
+                </li>
+                <li><a class="lk item" target="_blank" href="https://torre.co/s/AY3m1go0LQ" title="Connect on Linkedin">
+                    <span class="bg-[url('assets/torre.png')]">Connect on Linkedin</span></a>
+                </li>
+                <li><a class="fb item" target="_blank" href="#" title="Follow on Facebook">
+                    <span class="bg-[url('assets/')]">Follow on Facebook</span></a>
+                </li>
+            </ul>
         </div>
     </section>
     <section id="sect" class="w-full h-screen text-center overflow-hidden relative snap-center">

@@ -578,12 +578,16 @@ video {
   bottom: 0px;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .top-0{
   top: 0px;
 }
 
-.left-0{
-  left: 0px;
+.-z-10{
+  z-index: -10;
 }
 
 .z-10{
@@ -598,16 +602,16 @@ video {
   z-index: 50;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
 .flex{
   display: flex;
 }
 
 .hidden{
   display: none;
+}
+
+.h-\[var\(--height\)\]{
+  height: var(--height);
 }
 
 .h-full{
@@ -618,12 +622,12 @@ video {
   height: 100vh;
 }
 
-.h-\[var\(--height\)\]{
-  height: var(--height);
+.w-24{
+  width: 6rem;
 }
 
-.w-52{
-  width: 13rem;
+.w-\[var\(--width\)\]{
+  width: var(--width);
 }
 
 .w-full{
@@ -634,19 +638,7 @@ video {
   width: 100vw;
 }
 
-.w-\[\(var--width\)\]{
-  width: (var--width);
-}
-
-.w-\[var\(--width\)\]{
-  width: var(--width);
-}
-
 .flex-grow{
-  flex-grow: 1;
-}
-
-.grow{
   flex-grow: 1;
 }
 
@@ -664,11 +656,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-1{
-  --tw-translate-x: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .snap-y{
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
@@ -681,16 +668,8 @@ video {
   scroll-snap-align: center;
 }
 
-.flex-row-reverse{
-  flex-direction: row-reverse;
-}
-
 .items-center{
   align-items: center;
-}
-
-.justify-start{
-  justify-content: flex-start;
 }
 
 .justify-end{
@@ -721,6 +700,34 @@ video {
   background-color: rgb(0 0 0 / 0.05);
 }
 
+.bg-\[url\(\'\/assets\/\'\)\]{
+  background-image: url('/assets/');
+}
+
+.bg-\[url\(\'\/assets\/github\.png\'\)\]{
+  background-image: url('/assets/github.png');
+}
+
+.bg-\[url\(\'assets\/github\.png\'\)\]{
+  background-image: url('assets/github.png');
+}
+
+.bg-\[url\(\'\/asset\/\'\)\]{
+  background-image: url('/asset/');
+}
+
+.bg-\[url\(\'\/assets\/torre\.png\'\)\]{
+  background-image: url('/assets/torre.png');
+}
+
+.bg-\[url\(\'assets\/torre\.png\'\)\]{
+  background-image: url('assets/torre.png');
+}
+
+.bg-\[url\(\'assets\/\'\)\]{
+  background-image: url('assets/');
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -747,10 +754,6 @@ video {
 
 .text-center{
   text-align: center;
-}
-
-.font-right{
-  font-family: Righteous;
 }
 
 .text-sm{
@@ -782,14 +785,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.\[\&\>li\>a\]\:absolute>li>a{
-  position: absolute;
-}
-
-.\[\&\>li\>a\]\:relative>li>a{
-  position: relative;
-}
-
 .\[\&\>li\>a\]\:inline-block>li>a{
   display: inline-block;
 }
@@ -810,8 +805,4 @@ video {
 
 .\[\&\>li\]\:h-9>li{
   height: 2.25rem;
-}
-
-.\[\&\>li\]\:w-9>li{
-  width: 2.25rem;
 }

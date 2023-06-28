@@ -1,3 +1,9 @@
+let logo = document.getElementById('logo')
+window.addEventListener('load',myAnim)
+
+function myAnim() {
+    
+}
 //Sobra del nav
 const $listItem = document.querySelectorAll('#navegador li')
 const $cajita = document.querySelector('#cajita')
