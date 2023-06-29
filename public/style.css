@@ -49,6 +49,6 @@
     width: 10%;
     display: block;
     margin-bottom: 15px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0);
     cursor: pointer;
 }
