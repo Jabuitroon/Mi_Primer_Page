@@ -51,3 +51,26 @@ const observer = new IntersectionObserver((entries)=>{
 }, observerOptions);
 
 observer.observe(cody)
+
+let wrapperEjm = document.querySelector('.wrapper')
+let grapp = document.querySelector('.grid-list')
+let myEjems = {
+    'torre.png' : 'calculadora',
+    'calc.png' : 'calendario'
+}
+
+crearlista();
+
+function crearlista(){
+    let lis = document.createElement('li')
+    lis.setAttribute("class", "iterpo")
+    grapp.appendChild(lis)
+    crearimg(lis)
+}
+function crearimg(li){
+    for (const ejercicio in myEjems) {
+        const newImage = document.createElement('img');
+        newImage.setAttribute('src', `assets/${ejercicio}`);
+        li.appendChild(newImage)
+}
+}
