@@ -688,10 +688,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
 .overflow-auto{
   overflow: auto;
 }

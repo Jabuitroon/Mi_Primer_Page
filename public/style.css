@@ -1,3 +1,5 @@
+::-webkit-scrollbar { width: 5px; border-left: 1px solid #CD0A0A; background-color: #ffc9c9;}
+::-webkit-scrollbar-thumb { background-color: #CD0A0A; }
 :root{
     --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
@@ -39,16 +41,44 @@
     background: #3498DB;
 }
 
-#wrapper{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.bar h2{
+    background-color: #ddd;
 }
 
-.iterpo img{
-    width: 10%;
-    display: block;
-    margin-bottom: 15px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+#wrapper{
+    justify-content: space-evenly;
+    max-width: 900px;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.grid-list{
+    display: flex;
+    margin-top: 12%;    
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.grid-list::-webkit-scrollbar {
+    width: 2px;
+    border-left: 0px;
+    background-color: transparent;
+}
+
+.grid-list::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.iterpo{
+    padding: 20px;
+    width: 50%;
+}
+
+.picture img{   
+    max-width: 100%;
+    object-fit: cover;
     cursor: pointer;
 }

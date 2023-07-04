@@ -10,9 +10,6 @@ const $cajita = document.querySelector('#cajita')
     $listItem.forEach((item) => {
         item.addEventListener("mouseenter", () =>{
             const {left,top, width, height} = item.getBoundingClientRect()
-            const {clientHeight, clientWidth} = item
-            console.log({left,top, width, height})
-            console.log({clientHeight, clientWidth})
                 $cajita.style.setProperty("--left", `${left}px`)
                 $cajita.style.setProperty("--top", `${top}px`)
                 $cajita.style.setProperty("--width", `${width}px`)
@@ -36,41 +33,54 @@ const $container = document.querySelector("#navegador")
 let cody = document.querySelector('#section-bg2') // Lo que se verá después
 
 const observer = new IntersectionObserver((entries)=>{
-    console.log(entries)
     entries.forEach((entry) => {
         const { isIntersecting } = entry
-        console.log(isIntersecting)
         if (isIntersecting) {
             const color = entry.target.getAttribute("data-color")
-            console.log(color)
             $container.style.color = color
         } else {
-            $container.style.color = "white"
+            $container.style.color = "#EC0101"
         }
     })
 }, observerOptions);
 
 observer.observe(cody)
 
-let wrapperEjm = document.querySelector('.wrapper')
-let grapp = document.querySelector('.grid-list')
+//Ubicando proyectos
+
+let $wrapper = document.getElementById('wrapper')
 let myEjems = {
-    'torre.png' : 'calculadora',
-    'calc.png' : 'calendario'
+    'calendar.png' : 'Un calendario',
+    'calc.png' : 'calculadora',
+    'torre.png' : 'torre',
+    'logo.png' : 'torre',
+    'campo.jpg' : 'torre',
 }
 
-crearlista();
+const fragments = document.createDocumentFragment(); //Fragment evita la recarga de la page tantas veces segun los li totales
+console.log(fragments)
+crearlista()
 
-function crearlista(){
-    let lis = document.createElement('li')
-    lis.setAttribute("class", "iterpo")
-    grapp.appendChild(lis)
-    crearimg(lis)
-}
-function crearimg(li){
+function crearlista() {
+    let ul = document.createElement('ul')
+    ul.setAttribute("class","grid-list")    
+
     for (const ejercicio in myEjems) {
-        const newImage = document.createElement('img');
-        newImage.setAttribute('src', `assets/${ejercicio}`);
-        li.appendChild(newImage)
+        let name = myEjems[ejercicio]
+        let optili;
+        optili = 
+            `<li class="iterpo">
+                <a href="#" class="screen">
+                    <div class="bar">
+                        <h2>${name}</h2>
+                    </div>
+                    <picture class="img">
+                        <img src="assets/${ejercicio}">
+                    </picture>
+                </a>
+            </li>`
+        ul.innerHTML += optili
+    }
+fragments.appendChild(ul)
 }
-}
+$wrapper.appendChild(fragments)
