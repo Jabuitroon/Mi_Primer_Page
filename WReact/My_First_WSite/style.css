@@ -1,0 +1,84 @@
+::-webkit-scrollbar { width: 5px; border-left: 1px solid #CD0A0A; background-color: #ffc9c9;}
+::-webkit-scrollbar-thumb { background-color: #CD0A0A; }
+:root{
+    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.follow-me{
+    position: fixed;
+}
+
+.item{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    transition: width 0.25s;
+}
+
+.item span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-size: 100% auto;
+    text-indent: -9999em;
+}
+
+.item:hover{
+    width: 135%;  
+}
+
+.github{
+    background: black;
+}
+
+.lk{
+    background: #9A7D0A;
+}
+.fb{
+    background: #3498DB;
+}
+
+.bar h2{
+    background-color: #ddd;
+}
+
+#wrapper{
+    justify-content: space-evenly;
+    max-width: 900px;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.grid-list{
+    display: flex;
+    margin-top: 12%;    
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.grid-list::-webkit-scrollbar {
+    width: 2px;
+    border-left: 0px;
+    background-color: transparent;
+}
+
+.grid-list::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.iterpo{
+    padding: 20px;
+    width: 50%;
+}
+
+.picture img{   
+    max-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
